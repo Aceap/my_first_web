@@ -1,0 +1,26 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    color: #444;
+}
+.container {
+    display: block;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clean-float::before,
+.clean-float::after {
+    content: " ";
+    display: block;
+    clear: both;
+}

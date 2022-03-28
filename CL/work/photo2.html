@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电子相册</title>
+    <style>
+        ul li img {
+            padding: 20px 0 0 20px;
+        }
+
+        .container {
+            width: 500px;
+            margin: auto;
+        }
+
+        ul li {
+            width: 480px;
+            height: 360px;
+        }
+
+        ul {
+            background: #333;
+            list-style-type: none;
+            overflow: hidden;
+        }
+
+        p {
+            text-align: center;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <ul>
+        <li><a id="p1"><img alt="pics1" src="images/pics1.jpg"></a></li>
+        <li><a id="p2"><img alt="pics2" src="images/pics2.jpg"></a></li>
+        <li><a id="p3"><img alt="pics3" src="images/pics3.jpg"></a></li>
+    </ul>
+    <p>
+        <a href="#p1"><img alt="p1" src="images/p1.jpg"></a>
+        <a href="#p2"><img alt="p1" src="images/p2.jpg"></a>
+        <a href="#p3"><img alt="p1" src="images/p3.jpg"></a>
+    </p>
+</div>
+</body>
+</html>

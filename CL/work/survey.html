@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>调查</title>
+    <style>
+        table {
+            width: 450px;
+            border: 0;
+            border-collapse: collapse; /*等效cellpadding*/
+            text-align: center;
+        }
+
+        th, td {
+            padding: 0; /*等效cellspacing*/
+        }
+
+        .left {
+            width: 38%;
+        }
+
+        .right {
+            width: 62%;
+        }
+
+        .tt1 {
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+        .left {
+            border-right-width: 1px;
+            border-bottom-width: 1px;
+            border-top-style: none;
+            border-right-style: solid;
+            border-bottom-style: solid;
+            border-left-style: none;
+            border-right-color: #ccd8e6;
+            border-bottom-color: #ccd8e6;
+            font-size: 13px;
+            text-align: left;
+        }
+
+        .right {
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: #ccd8e6;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+<form action="#" id="form1" method="post" name="form1">
+    <table>
+        <tr>
+            <td bgcolor="#ff6600" class="tt1" colspan="2">同城网在线调查</td>
+        </tr>
+        <tr>
+            <td class="left">你从哪里知道同城的</td>
+            <td class="right">
+                <select id="sel" name="select">
+                    <option value="1">网上搜索</option>
+                    <option value="2">其他</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="left">你正在使用的同城网服务</td>
+            <td class="right">
+                <input id="nf11" name="nf1" type="checkbox"><label for="nf11">免费社区</label>
+                <input id="nf12" name="nf1" type="checkbox"><label for="nf12">免费留言簿</label>
+                <input id="nf13" name="nf1" type="checkbox"><label for="nf13">免费投票</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="left">你希望我们提供哪些新服务</td>
+            <td class="right">
+                <input id="nf21" name="nf2" type="checkbox"><label for="nf21">聊天室</label>
+                <input id="nf22" name="nf2" type="checkbox"><label for="nf22">博客</label>
+                <input id="nf23" name="nf2" type="checkbox"><label for="nf23">游戏系统</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="left">你是同城网会员吗</td>
+            <td class="right">
+                <label>
+                    <input name="vip" type="radio" value="1">
+                    是
+                </label>
+                <label>
+                    <input name="vip" type="radio" value="0">
+                    否
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="left">你对同城网的其他意见</td>
+            <td class="right">
+                <textarea cols="30" id="advise" name="advise" rows="10"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="提交">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

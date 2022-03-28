@@ -1,0 +1,46 @@
+.head{
+    color: aquamarine;
+    background: aliceblue;
+    border-bottom: 1px solid #ff0000;
+}
+.behind{
+    color: green;
+    background: azure;
+    border-bottom: 3px solid #ff0000;
+}
+#a {
+    size: A3;
+    color: red;
+    text-align: match-parent;
+    text-decoration: underline;
+    line-height: 1.2;
+}
+#b {
+    size: auto;
+    color: blueviolet;
+}
+button:active {
+    background: rgba(199, 54, 33, .2);
+}
+a:link {
+    color: blue;
+}
+a:visited {
+    color: gray;
+}
+button:hover {
+    color: aliceblue;
+}
+input:focus {
+    background: beige;
+    outline-color: red;
+}
+p {
+    font-family: "Droid Sans Mono", serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: yellow;
+}
+p::first-letter {
+    font-size: 20px;
+}

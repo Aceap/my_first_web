@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>旅游一览</title>
+    <style>
+        body {
+            background-color: #CC9;
+            padding-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #tb_out {
+            border: 1px solid black;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tb_in_1 {
+            border: 1px solid black;
+            text-align: center;
+            width: 238px;
+            height: 183px
+        }
+
+        .tb_in_2 {
+            border: 1px solid black;
+            text-align: left;
+            width: 238px;
+            height: 183px
+        }
+
+        .th1 {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        #bottom {
+            background-image: url("images/3.jpg");
+            width: 718px;
+            height: 171px;
+        }
+
+        #mid {
+            background-image: url("images/1.jpg");
+            width: 250px;
+            height: 179px;
+        }
+
+        #top {
+            background-image: url("images/2.jpg");
+            width: 719px;
+            height: 161px;
+        }
+    </style>
+</head>
+<body>
+<h1>旅游路线推荐</h1>
+<table id="tb_out">
+    <tr>
+        <td colspan="3"><img id="top"></td>
+        <!--        合并3列-->
+    </tr>
+    <tr>
+        <td height="183" width="211">
+            <table class="tb_in_1">
+                <tr class="th1">
+                    <td>推荐路线</td>
+                </tr>
+                <tr>
+                    <td>江南水乡</td>
+                </tr>
+                <tr>
+                    <td>云南丽江</td>
+                </tr>
+                <tr>
+                    <td>北京故宫</td>
+                </tr>
+                <tr>
+                    <td>瑰宝长城</td>
+                </tr>
+                <tr>
+                    <td>天赋成都</td>
+                </tr>
+            </table>
+        </td>
+        <td width="255"><img id="mid"></td>
+        <td width="235">
+            <table class="tb_in_2">
+                <tr class="th1">
+                    <td>经典路线</td>
+                </tr>
+                <tr>
+                    <td>北京：长城、故宫、颐和园</td>
+                </tr>
+                <tr>
+                    <td>九江：庐山、三叠泉、五老峰</td>
+                </tr>
+                <tr>
+                    <td>昆明：石林、大理、丽江</td>
+                </tr>
+                <tr>
+                    <td>青岛：烟台、威海、蓬莱</td>
+                </tr>
+                <tr>
+                    <td>沈阳：世园会、长春</td>
+                </tr>
+                <tr>
+                    <td>南京：中山陵、夫子庙、雨花台</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3"><img id="bottom"></td>
+    </tr>
+</table>
+</body>
+</html>
