@@ -1,0 +1,26 @@
+h3 {
+    text-align: center;
+    background-color: #a5d1ff;
+    border: 1px dotted #222222;
+}
+
+p {
+    text-indent: 25px;
+    text-align: left;
+}
+
+.block1 {
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: #f13c96 18px ridge;
+    float: left;
+}
+
+.block2 {
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: #f13c96 18px ridge;
+    float: left;
+}
