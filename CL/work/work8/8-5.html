@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="8-5.js"></script>
+    <title>表单验证</title>
+    <style>
+        #loginArea {
+            width: 300px;
+            font-size: 12px;
+            margin: 0 auto;
+        }
+
+        #loginArea p {
+            margin: 0 0 3px 0;
+            width: 100%
+        }
+
+        label {
+            background-color: #CCC;
+            display: block;
+            float: left;
+            width: 100px;
+            text-align: left;
+            margin-right: 2px;
+            padding: 2px 0;
+        }
+
+        input {
+            display: block;
+            float: left;
+            width: 150px;
+            margin: 2px;
+        }
+
+        input.button {
+            width: 60px;
+            margin-right: 5px;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        legend {
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+<form id="loginForm" name="loginForm" onsubmit="return validForm();">
+    <div id="loginArea">
+        <fieldset>
+            <legen>用户注册</legen>
+            <p>
+                <label for="userName">登录用户名</label>
+                <input id="userName" name="userName" tabindex="1" type="text">
+            </p>
+            <p>
+                <label for="pwd">登录密码</label>
+                <input id="pwd" name="pwd" tabindex="2" type="password">
+            </p>
+            <p>
+                <label for="repwd">重复输入密码</label>
+                <input id="repwd" name="repwd" tabindex="3" type="password">
+            </p>
+            <p>
+                <label for="email">有效邮箱地址</label>
+                <input id="email" name="email" tabindex="4" type="email">
+            </p>
+            <p>
+                <input class="button" id="btlogin" tabindex="5" type="submit" value="提交">
+                <input class="button" id="btreset" tabindex="6" type="button" value="取消">
+            </p>
+        </fieldset>
+    </div>
+</form>
+</body>
+</html>

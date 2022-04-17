@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>price</title>
+    <script>
+        function priceOf(weight) {
+            if (weight <= 100 && weight > 0) {
+                return 0.8 * Math.ceil(weight / 20)
+            } else if (weight <= 0) {
+                alert("重量不能为负或零")
+            } else if (weight > 100) {
+                alert("重量超出范围")
+            }
+        }
+
+        function show() {
+            let weight = document.getElementById("weight").value
+            document.getElementById("result").value = priceOf(weight)
+        }
+    </script>
+</head>
+<body>
+<label for="weight">重量:</label><input id="weight" required style="width: 50px" type="text"> <span>克</span> <br>
+<label for="result">价格:</label><input id="result" name="result" readonly style="width: 50px" type="text"> <span>元</span><br>
+<input id="calculate" onclick="show()" style="margin-left: 30px" type="button" value="计算">
+</body>
+</html>

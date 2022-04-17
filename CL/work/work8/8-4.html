@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数的例子</title>
+    <script type="text/javascript">
+        /** 参数：color  表格新的背景色
+         * 描述：改变表格的背景颜色
+         */
+        function changeColor(color) {
+            var table = document.getElementById("colorTable");
+            table.bgColor = color;
+        }
+    </script>
+</head>
+<body>
+选取颜色：
+<table border=1>
+    <tr height="24">
+        <td bgcolor="red" onclick="changeColor('red')" width="24"></td>
+        <td bgcolor="orange" onclick="changeColor('orange')" width="24"></td>
+        <td bgcolor="yellow" onclick="changeColor('yellow')" width="24"></td>
+        <td bgcolor="green" onclick="changeColor('green')" width="24"></td>
+        <td bgcolor="black" onclick="changeColor('black')" width="24"></td>
+        <td bgcolor="blue" onclick="changeColor('blue')" width="24"></td>
+        <td bgcolor="purple" onclick="changeColor('purple')" width="24"></td>
+    </tr>
+</table>
+<table border=1 height="168" id="colorTable" width="168">
+    <tr>
+        <td></td>
+    </tr>
+</table>
+</body>
+</html>

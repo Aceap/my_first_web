@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>avg</title>
+    <style>
+        .num {
+            width: 20px;
+            margin: 10px
+        }
+
+        #result {
+            width: 20px
+        }
+    </style>
+</head>
+<body>
+<label>
+    <input class="num" id="a" type="text">
+</label>
+<label>
+    <input class="num" id="b" type="text">
+</label>
+<label>
+    <input class="num" id="c" type="text">
+</label>
+<br>
+
+<label for="result">result </label><input id="result" name="result" type="text">
+
+<button onclick="calculate()">生成随机数字并计算</button>
+
+<script>
+    function calculate() {
+        let a = Math.floor(Math.random() * 10);
+        let b = Math.floor(Math.random() * 10);
+        let c = Math.floor(Math.random() * 10);
+        document.getElementById("a").value = a
+        document.getElementById("b").value = b
+        document.getElementById("c").value = c
+        let result = a + b + c;
+        document.getElementById("result").value = result
+        alert(result)
+    }
+</script>
+</body>
+</html>
